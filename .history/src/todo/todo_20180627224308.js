@@ -1,0 +1,13 @@
+import * as React from "react"
+
+const TodoView = ({ todo }) => (
+    <li>
+        <input
+            type="checkbox"
+            checked={todo.finished}
+            onClick={() => todo.finished = !todo.finished}
+        />{todo.title}
+    </li>
+)
+
+export default TodoView
